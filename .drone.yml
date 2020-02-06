@@ -5,17 +5,17 @@ name: default
 
 steps:
   
-# add settings.xml to /var/lib/cache/ 
+# Add settings.xml to /var/lib/cache/ 
   - name: build
     image: maven
     volumes:
-      - name: cache
-        path: /root/.m2
+      - name: cache # The Volume's name
+        path: /root/.m2 # The path in the container
     commands:
       - mvn help:effective-settings
       - mvn clean package -DskipTests
 
 volumes:
-  - name: cache
+  - name: cache # The name use in this pipeline, 
     host:
-      path: /var/lib/cache
+      path: /var/lib/cache # The path be used in the host.
