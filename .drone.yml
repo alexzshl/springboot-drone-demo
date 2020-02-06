@@ -1,0 +1,21 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  
+# add settings.xml to /var/lib/cache/ 
+  - name: build
+    image: maven
+    volumes:
+      - name: cache
+        path: /root/.m2
+    commands:
+      - mvn help:effective-settings
+      - mvn clean package -DskipTests
+
+volumes:
+  - name: cache
+    host:
+      path: /var/lib/cache
