@@ -15,6 +15,8 @@ Maven 项目使用 Drone 实现 CI/CD
 ```
 version: '3'
 
+![images](./image/image.png)
+
 services:
   drone-server:
     image: drone/drone:1.6.5
