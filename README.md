@@ -5,6 +5,8 @@ Maven 项目使用 Drone 实现 CI/CD
 1. drone:1.6.5
 2. drone-runner-docker:1
 
+![image](./images/image.png)
+
 ## OAuth授权
 1. 登录 https://github.com/settings/applications/new
 2. 根据[drone 官方文档](https://readme.drone.io/server/provider/github/)操作
@@ -14,8 +16,6 @@ Maven 项目使用 Drone 实现 CI/CD
 替换【】里面的内容
 ```
 version: '3'
-
-![image](./images/image.png)
 
 services:
   drone-server:
