@@ -5,7 +5,9 @@ Maven 项目使用 Drone 实现 CI/CD
 1. drone:1.6.5
 2. drone-runner-docker:1
 
-![image](./images/image.png)
+![image](https://user-images.githubusercontent.com/39125296/206907678-e2881636-dc4c-4107-8976-403802a1b683.png)
+
+![image](images/image.png)
 
 ## OAuth授权
 1. 登录 https://github.com/settings/applications/new
@@ -97,5 +99,6 @@ volumes:
 ## 问题 or 坑
 * Bitbucket OAuth 授权会获取所有 Team 的项目，[尴尬]公司项目用的Bitbucket。
 * Drone 的文档真实烂，参数都不写清楚，为了项目跑起来，直接Docker XXX inspect 调试配置。。。 
+
 
 
