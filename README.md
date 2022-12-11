@@ -7,7 +7,7 @@ Maven 项目使用 Drone 实现 CI/CD
 
 ![image](https://user-images.githubusercontent.com/39125296/206907678-e2881636-dc4c-4107-8976-403802a1b683.png)
 
-![image](images/image.png?raw=true)
+![image](./images/image.png?raw=true)
 
 ## OAuth授权
 1. 登录 https://github.com/settings/applications/new
